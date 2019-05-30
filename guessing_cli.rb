@@ -1,12 +1,13 @@
 # Code your solution here!
 def welcome
-  guess = ""
+    puts "PLease enter a number between 1 - 6"
+    guess = gets.chomp
+    if guess == "exit"
+    puts "Goodbye"
+  else
+  guess.to_i
   while (1..6).include?(guess) == false
   puts "PLease enter a number between 1 - 6"
-  if guess == "exit"
-    puts "The computer guessed #{computer_guess}"
-    break
-  else
   guess = gets.to_i
 end
 end
