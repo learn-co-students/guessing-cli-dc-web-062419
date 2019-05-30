@@ -38,9 +38,12 @@ your_guess = ""
 computer_guess = ""
 random_number_generator
 welcome
+if your_guess == "exit"
+  puts "Goodbye"
+else
 compare_numbers
   
-
+end
 end
 
 
